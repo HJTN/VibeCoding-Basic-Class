@@ -34,9 +34,9 @@
 
 > 1차시 수업 전까지 하셔야 할 일!
 
-- Antigravity를 설치 (필수)
-- Claude CLI를 설치 (선택)
-- ChatGPT CLI를 설치 (선택)
+- Antigravity 설치 (필수)
+- Claude CLI 설치 (선택)
+- ChatGPT CLI 설치 (선택)
 - VS Code에서 사용하던 환경이 있다면, Antigravity로 옮기기
 
 ### 가. 시간표 구성 (변동 가능)

@@ -3,47 +3,48 @@
 
 > 🛠️ 1차시 수업 **전까지** 아래 내용을 따라 개인 노트북에 AI 개발 환경을 구축해 주세요!
 
-본 문서는 바이브코딩 기초반 8차시 과정에서 사용할 AI 툴의 설치 방법을 안내합니다.
-설치 대상은 다음과 같이 세 가지입니다.
+본 문서는 바이브코딩 기초반 8차시 과정에서 사용할 AI 툴의 설치 방법을 안내하고 있어요!<br/>
+필수 설치 대상은 **Antigravity (2.0 앱 + IDE 앱)** 2가지이고, 나머지는 선택 사항입니다.
 
-- **Antigravity** (2.0 앱 · IDE 앱 · CLI · SDK)
-- **Claude Code CLI**
-- **Codex CLI**
+- **Antigravity** 2.0 앱 · IDE 앱 (필수)
+- Antigravity CLI · SDK (선택)
+- **Claude Code** 앱 + CLI (선택)
+- **ChatGPT** 앱 + CLI (선택)
 
-Antigravity는 2.0으로 올라오면서 네 가지 도구로 분화했습니다.
+Antigravity는 2.0으로 올라오면서 네 가지 도구로 분화되었어요!<br/>
 따라서 어떤 도구를 설치할지 먼저 확인한 뒤 진행해 주세요.
-
-수업 시간에는 설치 자체를 다루지 않으므로, 미리 설치를 마치기 바랍니다.
-설치 도중 막히는 부분이 있으면 단톡방에 남겨주세요! 1차시에 함께 해결합니다.
+<br/>
+수업 시간에 아직 환경 설정이 안된 부분을 짚고 넘어가니 걱정하지 마시기 바래요!<br/>
+설치 도중 막히는 부분이 있으면 단톡방에 남겨주세요! 1차시에 함께 해결합시다.
 
 ---
 
 # 1. 사전 준비 사항
 
-설치를 시작하기 전에 준비물을 먼저 갖춰야 합니다.
-계정과 기본 도구가 없으면 설치 중간에 진행이 멈추기 때문입니다.
+설치를 시작하기 전에 준비물을 먼저 갖춰야 해요.
+계정과 기본 도구가 없으면 설치 중간에 진행이 멈출 수 있습니다.
 아래 항목을 순서대로 확인해 주세요.
 
 ## 가. 하드웨어 및 운영체제
 
 | 구분 | 최소 사양 | 권장 사양 | 비고 |
-| :---: | :--- | :--- | :--- |
-| 운영체제 | Windows 10(64bit) 이상,<br>macOS 13 이상 | Windows 11,<br>macOS 최신 버전 | Apple Silicon·Intel Mac 모두 지원 |
+| :---: | :---: | :---: | :---: |
+| 운영체제 | Windows 10(64bit) 이상,<br/>macOS 13 이상 | Windows 11,<br/>macOS 최신 버전 | Apple Silicon · Intel Mac 모두 지원 |
 | 메모리 | 8GB | 16GB | AI 연산은 클라우드에서 처리 |
-| 저장 공간 | 10GB 이상 여유 | 20GB 이상 여유 | IDE·CLI·프로젝트 파일 포함 |
+| 저장 공간 | 10GB 이상 여유 | 20GB 이상 여유 | IDE · CLI · 프로젝트 파일 포함 |
 | 네트워크 | 인터넷 연결 필수 | 유선 또는 안정적인 Wi-Fi | 모든 AI 기능이 온라인 동작 |
 | 그래픽 | 별도 GPU 불필요 | - | 로컬 추론을 하지 않음 |
 
 ## 나. 계정 준비
 
-세 가지 툴은 각각 다른 계정을 사용합니다.
-특히 Claude와 Codex는 **유료 구독이 필요**하다는 점에 유의해 주세요.
-무료 계정만으로는 CLI 로그인할 수 없어요!
+세 가지 툴은 각각 다른 계정을 사용합니다.<br/>
+특히 Claude와 Codex는 **유료 구독이 필요**하다는 점에 유의해 주세요.<br/>
+무료 계정만으로는 CLI에서 로그인할 수 없어요!
 
 | 구분 | 필요한 계정 | 요금제 | 비고 |
-| :---: | :--- | :--- | :--- |
-| Antigravity<br>(2.0·IDE·CLI) | Google 계정 | 무료 요금제로 시작 가능 | 일일 사용량 제한 존재,<br>Google AI Pro/Ultra로 한도 확장 |
-| Antigravity SDK | Gemini API Key<br>또는 GCP 계정 | 사용량 기반 과금 | 선택 사항 |
+| :---: | :---: | :---: | :---: |
+| Antigravity<br/>(2.0·IDE·CLI) | Google 계정 | 무료 요금제로 시작 가능 | 일일 사용량 제한 존재,<br/>Google AI Pro/Ultra로 한도 확장 |
+| Antigravity SDK | Gemini API Key<br/>또는 GCP 계정 | 사용량 기반 과금 | 선택 사항 |
 | Claude Code CLI | Anthropic 계정 | Pro 이상 유료 구독 | 무료 요금제는 사용 불가 |
 | Codex CLI | ChatGPT 계정 | Plus 이상 유료 구독 | API Key 방식도 가능 |
 
@@ -52,7 +53,7 @@ Antigravity는 2.0으로 올라오면서 네 가지 도구로 분화했습니다
 
 ## 다. 기본 도구 설치
 
-CLI 도구를 사용하려면 Git과 Node.js를 먼저 설치하셔야 합니다.
+CLI 도구를 사용하려면 Git과 Node.js를 먼저 설치하셔야 합니다.<br/>
 Git은 코드 버전 관리와 Bash 셸 제공에 사용하고, Node.js는 npm 설치 방식에 사용합니다.
 
 ### 1) Git 설치
@@ -82,30 +83,30 @@ npm --version
 
 # 2. Antigravity 설치
 
-Antigravity는 Google이 만든 AI 에이전트 개발 플랫폼입니다.
+Antigravity는 Google이 만든 AI 에이전트 개발 플랫폼입니다.<br/>
 수업 전반에 다루므로 **가장 먼저 설치**해 주세요.
 
 ## 가. 네 가지 도구(Surface)의 이해
 
-**Antigravity는 2.0부터 하나의 IDE가 아니라 네 개의 도구로 나뉘었습니다.**
-기존 1.x에서는 에디터와 에이전트 관리자가 하나의 앱에 들어 있었습니다.
+**Antigravity는 2.0부터 하나의 IDE가 아니라 네 개의 도구로 나뉘었습니다.**<br/>
+기존 1.x에서는 에디터와 에이전트 관리자가 하나의 앱에 들어 있었습니다.<br/>
 그러나 에이전트의 활용 범위가 코딩 밖으로 넓어지면서 역할별로 앱을 분리했습니다.
-
-4가지 도구 모두 **동일한 에이전트 하네스(Agent Harness)** 위에서 동작합니다.
-따라서 플러그인, 스킬, 설정을 서로 공유하며 같은 프로젝트 폴더를 함께 사용합니다.
+<br/>
+4가지 도구 모두 **동일한 에이전트 하네스(Agent Harness)** 위에서 동작합니다.<br/>
+따라서 플러그인, 스킬, 설정을 서로 공유하며 같은 프로젝트 폴더를 함께 사용합니다.<br/>
 어떤 도구로 작업하든 결과 파일은 동일한 위치(폴더)에 저장돼요!
 
 | 구분 | 형태 | 주요 용도 | 설치 권장 |
 | :---: | :---: | :--- | :---: |
-| Antigravity 2.0 | 데스크톱 앱 | 에이전트에게 작업을 맡기고<br>여러 프로젝트를 동시에 관리 | **필수** |
-| Antigravity IDE | 데스크톱 앱 | 코드를 직접 보면서<br>에이전트의 수정 내용을 한 줄씩 확인 | **필수** |
-| Antigravity CLI | 터미널(TUI) | 터미널에서 에이전트 실행,<br>SSH·원격 환경 작업 | 선택 |
+| Antigravity 2.0 | 데스크톱 앱 | 에이전트에게 작업을 맡기고<br/>여러 프로젝트를 동시에 관리 | **필수** |
+| Antigravity IDE | 데스크톱 앱 | 코드를 직접 보면서<br/>에이전트의 수정 내용을 한 줄씩 확인 | **필수** |
+| Antigravity CLI | 터미널(CLI) | 터미널에서 에이전트 실행,<br/>SSH·원격 환경 작업 | 선택 |
 | Antigravity SDK | Python 라이브러리 | 나만의 에이전트를 코드로 직접 구현 | 선택 |
 
 ### 1) Antigravity 2.0과 IDE의 차이
 
 | 구분 | Antigravity 2.0 | Antigravity IDE | 비고 |
-| :---: | :--- | :--- | :--- |
+| :---: | :---: | :---: | :---: |
 | 중심 화면 | 에이전트 대화 화면 | 코드 편집기 | - |
 | 에디터 | 없음 | 있음 (VS Code 기반) | - |
 | 작업 방식 | 여러 작업을 동시에 맡김 | 한 줄씩 확인하며 수정 | - |
@@ -116,16 +117,16 @@ Antigravity는 Google이 만든 AI 에이전트 개발 플랫폼입니다.
 
 - 1차시 전까지 **Antigravity 2.0**과 **Antigravity IDE** 모두 설치해 주세요!
 - 두 앱은 함께 설치해도 서로 충돌하지 않습니다.
-- **CLI**와 **SDK**는 선택 사항입니다.
+- **CLI**와 **SDK**는 선택 사항이에요!
 - 기존에 Antigravity 1.x를 쓰셨다면 자동 업데이트 안내를 통해 2.0을 추가 설치하면 돼요!
 
 ## 나. 시스템 요구 사항
 
 | 구분 | 요구 사항 | 비고 |
-| :---: | :--- | :--- |
+| :---: | :---: | :---: |
 | Windows | Windows 10 (64bit) 이상 | x64 및 ARM64 설치 파일 제공 |
 | macOS | macOS 12(Monterey) 이상 | Apple Silicon·Intel 설치 파일 제공 |
-| Linux | glibc 2.28 이상,<br>glibcxx 3.4.25 이상 | x64 및 ARM64 지원 |
+| Linux | glibc 2.28 이상,<br/>glibcxx 3.4.25 이상 | x64 및 ARM64 지원 |
 | 브라우저 | Chrome 브라우저 | 에이전트 브라우저 연동에 사용 |
 | 계정 | Google(Gmail) 계정 | 세 앱이 로그인 정보를 공유 |
 
@@ -140,7 +141,7 @@ Antigravity는 Google이 만든 AI 에이전트 개발 플랫폼입니다.
 
 ### 2) 최초 실행 설정
 
-최초 실행 시 설정 마법사가 순서대로 나타나는데요.
+최초 실행 시 설정 마법사가 순서대로 나타나는데요.<br/>
 아래 순서대로 진행하시면 됩니다.
 
 #### 가) Google 계정 로그인
@@ -179,7 +180,7 @@ Antigravity는 Google이 만든 AI 에이전트 개발 플랫폼입니다.
 
 ### 2) 기존 VS Code 환경 가져오기
 
-기존에 VS Code나 Cursor를 사용하셨다면 설정을 그대로 가져올 수 있습니다.
+기존에 VS Code나 Cursor를 사용하셨다면 설정을 그대로 가져올 수 있습니다.<br/>
 Antigravity IDE가 VS Code 포크이므로 호환성이 높기 때문입니다.
 
 - 설정 마법사에서 `Import from VS Code`(또는 Cursor)를 선택합니다.
@@ -189,7 +190,7 @@ Antigravity IDE가 VS Code 포크이므로 호환성이 높기 때문입니다.
 
 ### 3) 2.0 앱과 함께 사용하기
 
-두 앱은 별개의 프로그램이지만 같은 폴더를 함께 바라봅니다.
+두 앱은 별개의 프로그램이지만 같은 폴더를 함께 바라봅니다.<br/>
 디스크의 동일한 파일을 읽고 쓰기 때문입니다.
 
 - Antigravity 2.0과 IDE에서 **같은 프로젝트 폴더**를 엽니다.
@@ -198,7 +199,7 @@ Antigravity IDE가 VS Code 포크이므로 호환성이 높기 때문입니다.
 
 ### 4) 확장 프로그램 관련 유의 사항
 
-Antigravity IDE는 VS Code 마켓플레이스가 아닌 **OpenVSX 레지스트리**를 사용합니다.
+Antigravity IDE는 VS Code 마켓플레이스가 아닌 **OpenVSX 레지스트리**를 사용합니다.<br/>
 따라서 일부 VS Code 확장 프로그램은 검색 결과에 나타나지 않아요!
 
 > - 검색되지 않는 확장은 `.vsix` 파일을 내려받아 설치할 수 있어요.
@@ -207,8 +208,8 @@ Antigravity IDE는 VS Code 마켓플레이스가 아닌 **OpenVSX 레지스트�
 
 ## 마. Antigravity CLI 설치 (선택)
 
-Antigravity CLI는 터미널(검은 창)에서 동작하는 에이전트 도구에요.
-Go 언어로 만들어 실행 속도가 빠르며, 키보드만으로 조작할 수 있어요!
+Antigravity CLI는 터미널(검은 창)에서 동작하는 에이전트 도구에요.<br/>
+Go 언어로 만들어 실행 속도가 빠르며, 키보드만으로 조작할 수 있어요!<br/>
 실행 명령어는 `antigravity`가 아닌 **`agy`** 입니다.
 
 ### 1) 설치 절차
@@ -246,7 +247,7 @@ agy
 
 ## 바. Antigravity SDK 설치 (선택)
 
-Antigravity SDK는 에이전트를 직접 코드로 만드는 Python 라이브러리입니다.
+Antigravity SDK는 에이전트를 직접 코드로 만드는 Python 라이브러리입니다.<br/>
 앞선 세 도구가 완성된 에이전트를 쓰는 방식이라면, SDK는 에이전트를 만드는 방식입니다.
 
 ### 1) 설치 절차
@@ -261,7 +262,7 @@ pip install google-antigravity
 
 ### 2) 인증 설정
 
-SDK는 Google 로그인이 아닌 **API Key 방식**으로 인증합니다.
+SDK는 Google 로그인이 아닌 **API Key 방식**으로 인증합니다.<br/>
 [Google AI Studio](https://aistudio.google.com/apikey)에서 API Key를 먼저 발급받으세요.
 
 ```powershell
@@ -305,9 +306,8 @@ python test_agent.py
 
 # 3. Claude Code CLI 설치 (선택)
 
-Claude Code는 터미널에서 동작하는 Anthropic의 AI 코딩 에이전트입니다.
-IDE 없이 터미널만으로 코드를 읽고 수정할 수 있습니다.
-6차시 Skill·MCP 실습에서 활용할 예정입니다.
+**Claude Code CLI**는 터미널에서 동작하는 Anthropic의 AI 코딩 에이전트입니다.<br/>
+IDE 없이 터미널만으로 코드를 읽고 수정할 수 있어요!
 
 > Antigravity만으로도 충분해요!
 > 클로드 코드는 필수 설치가 아닙니다!
@@ -315,16 +315,16 @@ IDE 없이 터미널만으로 코드를 읽고 수정할 수 있습니다.
 ## 가. 시스템 요구 사항
 
 | 구분 | 요구 사항 | 비고 |
-| :---: | :--- | :--- |
+| :---: | :---: | :---: |
 | Windows | Windows 10 (1809) 이상 | Git for Windows 설치 권장 |
 | macOS | macOS 13 이상 | - |
-| Linux | Ubuntu 20.04 이상,<br>Debian 10 이상 | WSL에서도 동작 |
+| Linux | Ubuntu 20.04 이상,<br/>Debian 10 이상 | WSL에서도 동작 |
 | 하드웨어 | RAM 4GB 이상 | x64 또는 ARM64 |
 | 셸 | Bash, Zsh, PowerShell, CMD | - |
 
 ## 나. 설치 절차
 
-운영체제에 맞는 명령어를 **하나만** 실행하시면 됩니다.
+운영체제에 맞는 명령어를 **하나만** 실행하시면 됩니다.<br/>
 공식 설치 스크립트 방식을 권장합니다. 자동 업데이트를 지원하기 때문입니다.
 
 ### 1) Windows (PowerShell)
@@ -383,9 +383,8 @@ claude doctor
 
 # 4. Codex CLI 설치 (선택)
 
-Codex CLI는 OpenAI가 제공하는 터미널 기반 코딩 에이전트입니다.
+**Codex CLI**는 OpenAI가 제공하는 터미널 기반 코딩 에이전트입니다.<br/>
 Claude Code와 사용 방식이 비슷하므로 비교 실습에 활용합니다.
-설치 방식도 Claude Code와 유사합니다.
 
 > Antigravity만으로도 충분해요!
 > 코덱스는 필수 설치가 아닙니다!
@@ -393,7 +392,7 @@ Claude Code와 사용 방식이 비슷하므로 비교 실습에 활용합니다
 ## 가. 시스템 요구 사항
 
 | 구분 | 요구 사항 | 비고 |
-| :---: | :--- | :--- |
+| :---: | :---: | :---: |
 | 운영체제 | Windows, macOS, Linux | Windows는 PowerShell 사용 |
 | Node.js | 22 이상 권장 | npm 설치 방식에만 해당 |
 | 계정 | ChatGPT Plus 이상 | API Key 방식도 가능 |
@@ -453,11 +452,10 @@ codex --version
 
 # 5. 설치 완료 체크리스트
 
-1차시 수업 전에 아래 항목을 모두 확인해 주세요.
-하나라도 체크가 되지 않으면 향후 실습 진행이 어렵습니다.
+1차시 수업 전에 아래 항목을 모두 확인해 주세요!
 
 | 구분 | 확인 항목 | 확인 명령 또는 방법 | 필수 여부 | 완료 여부 |
-| :---: | :--- | :--- | :---: | :---: |
+| :---: | :---: | :---: | :---: | :---: |
 | 기본 도구 | Git 설치 | `git --version` | 필수 | ☐ |
 | 기본 도구 | Node.js 설치 | `node --version` | 필수 | ☐ |
 | Antigravity 2.0 | 설치 및 Google 로그인 | 채팅 창에서 응답 확인 | 필수 | ☐ |
@@ -465,8 +463,8 @@ codex --version
 | Antigravity IDE | 기존 VS Code 환경 이전 | 확장·테마 적용 확인 | 권장 | ☐ |
 | Antigravity CLI | 설치 및 로그인 | `agy` 실행 | 선택 | ☐ |
 | Antigravity SDK | 설치 및 API Key 설정 | `test_agent.py` 실행 | 선택 | ☐ |
-| Claude Code | 설치 및 로그인 | `claude doctor` | 필수 | ☐ |
-| Codex | 설치 및 로그인 | `codex --version` | 필수 | ☐ |
+| Claude Code | 설치 및 로그인 | `claude doctor` | 선택 | ☐ |
+| Codex | 설치 및 로그인 | `codex --version` | 선택 | ☐ |
 
 ---
 
@@ -474,7 +472,7 @@ codex --version
 
 ## 가. `command not found` 오류가 발생하는 경우
 
-설치는 끝났지만 PATH 환경 변수가 반영되지 않은 상태입니다.
+설치는 끝났지만 PATH 환경 변수가 반영되지 않은 상태입니다.<br/>
 터미널이 실행 파일의 위치를 아직 모르기 때문이에요!
 
 - 열려 있는 터미널을 모두 닫고 새 터미널을 엽니다.
@@ -482,7 +480,7 @@ codex --version
 
 ## 나. Windows에서 명령어가 인식되지 않는 경우
 
-PowerShell 명령을 CMD 창에서 실행하면 오류가 발생합니다.
+PowerShell 명령을 CMD 창에서 실행하면 오류가 발생합니다.<br/>
 두 셸의 문법이 서로 다르기 때문입니다.
 
 - 프롬프트가 `PS C:\`로 시작하면 **PowerShell**입니다.
@@ -491,7 +489,7 @@ PowerShell 명령을 CMD 창에서 실행하면 오류가 발생합니다.
 
 ## 다. 어떤 Antigravity 앱을 실행했는지 헷갈리는 경우
 
-두 앱은 이름이 비슷하지만 완전히 다른 프로그램입니다.
+두 앱은 이름이 비슷하지만 완전히 다른 프로그램입니다.<br/>
 아이콘 색으로 구분하시면 가장 빠릅니다.
 
 - **흰색 배경 로고**는 Antigravity 2.0입니다. 에이전트 대화 화면이 먼저 나옵니다.
@@ -500,7 +498,7 @@ PowerShell 명령을 CMD 창에서 실행하면 오류가 발생합니다.
 
 ## 라. Antigravity에서 VS Code 확장이 검색되지 않는 경우
 
-Antigravity IDE는 OpenVSX 레지스트리를 사용합니다.
+Antigravity IDE는 OpenVSX 레지스트리를 사용합니다.<br/>
 VS Code 마켓플레이스와 등록된 확장 목록이 다르기 때문입니다.
 
 - 확장 배포 페이지에서 `.vsix` 파일을 직접 내려받습니다.
@@ -508,7 +506,7 @@ VS Code 마켓플레이스와 등록된 확장 목록이 다르기 때문입니�
 
 ## 마. `agy` 명령을 찾을 수 없는 경우
 
-Antigravity CLI의 실행 파일 이름은 `antigravity`가 아닙니다.
+Antigravity CLI의 실행 파일 이름은 `antigravity`가 아닙니다.<br/>
 설치 시 `agy`라는 이름으로 등록하기 때문입니다.
 
 - 명령어를 `agy`로 정확히 입력했는지 확인합니다.
@@ -516,7 +514,7 @@ Antigravity CLI의 실행 파일 이름은 `antigravity`가 아닙니다.
 
 ## 바. Claude Code 로그인이 되지 않는 경우
 
-무료 요금제 계정으로는 로그인할 수 없습니다.
+무료 요금제 계정으로는 로그인할 수 없습니다.<br/>
 Claude Code는 Pro 이상 구독에서만 동작하기 때문입니다.
 
 - 계정의 구독 상태를 먼저 확인합니다.
@@ -524,7 +522,7 @@ Claude Code는 Pro 이상 구독에서만 동작하기 때문입니다.
 
 ## 사. macOS에서 Antigravity가 실행되지 않는 경우
 
-macOS 버전이 낮으면 앱이 실행되지 않습니다.
+macOS 버전이 낮으면 앱이 실행되지 않습니다.<br/>
 Antigravity가 macOS 12(Monterey) 이상을 요구하기 때문입니다.
 
 - macOS 버전이 12 이상인지 확인합니다.
