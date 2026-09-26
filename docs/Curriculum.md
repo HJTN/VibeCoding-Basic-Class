@@ -15,16 +15,16 @@
 
 ## 2️⃣ 한 학기 교육 시간표 (변동 가능)
 
-| 차시 | 시간 | 교육 내용 | 비고 |
-| :---: | :---: | :---: | :---: |
-| 1차시 | 약 60+@분 | 오리엔테이션, 개발 환경 구축, Antigravity 사용법 | - |
-| 2차시 | 약 60+@분 | Markdown 언어에 대한 이해와 실습 | 마크다운 문서 잘 쓰는 법,<br/>Markdown vs HTML |
-| 3차시 | 약 90분 | 프롬프트·컨텍스트·하네스·루프 엔지니어링의 이해 | [프롬프트 엔지니어링](./docs/references/프롬프트_엔지니어링_이해.pdf) |
-| 4차시 | 약 90분 | LLM 개요, 프롬프트 보안, LLM Agent의 이해 | [LLM 개요](./docs/references/LLM_개요.pdf) |
-| 5차시 | 약 90분 | RAG, LangChain 기초 및 실습 | [RAG·LangChain 개요](./docs/references/RAG_LangChain.pdf) |
-| 6차시 | 약 90분 | Skill과 MCP에 대한 이해와 실습 | - |
-| 7차시 | 약 90분 | 클라우드 플랫폼 (GCP, AWS),<br/>프론트엔드·백엔드 배포 방법 등 | - |
-| 8차시 | 약 90분 | 미니 프로젝트 | - |
+| 차시 | 시간 | 교육 내용 | 강의 자료 | 비고 |
+| :---: | :---: | :---: | :---: | :---: |
+| 1차시 | 약 60+@분 | 오리엔테이션, 개발 환경 구축, Antigravity 사용법 | [1차시 강의 자료](./docs/lecture-notes/[VibeCoding]%201차시%20강의%20자료.pdf) | - |
+| 2차시 | 약 60+@분 | Markdown 언어에 대한 이해와 실습 | [2차시 강의 자료](./docs/lecture-notes/[VibeCoding]%202차시%20강의%20자료.pdf) | 마크다운 문서 잘 쓰는 법, <br/>Markdown vs HTML |
+| 3차시 | 약 90분 | 프롬프트·컨텍스트·하네스·루프 엔지니어링의 이해 | 준비 중... | [프롬프트 엔지니어링](./docs/references/프롬프트_엔지니어링_이해.pdf) |
+| 4차시 | 약 90분 | LLM 개요, 프롬프트 보안, LLM Agent의 이해 | 준비 중... | [LLM 개요](./docs/references/LLM_개요.pdf) |
+| 5차시 | 약 90분 | RAG, LangChain 기초 및 실습 | 준비 중... | [RAG·LangChain 개요](./docs/references/RAG_LangChain.pdf) |
+| 6차시 | 약 90분 | Skill과 MCP에 대한 이해와 실습 | 준비 중... | - |
+| 7차시 | 약 90분 | 클라우드 플랫폼 (GCP, AWS),<br/>프론트엔드·백엔드 배포 방법 등 | 준비 중... | - |
+| 8차시 | 약 90분 | 미니 프로젝트 | 준비 중... | - |
 
 ---
 
@@ -32,7 +32,8 @@
 
 ### 📢 사전 공지
 
-> 1차시 수업 전까지 하셔야 할 일!
+> 1차시 수업 전까지 하셔야 할 일!<br/>
+> 👉 [환경 설정 가이드라인](./lecture-notes/[VibeCoding]%201주차%20Antigravity+@%20설치%20가이드.pdf)
 
 - Antigravity 설치 (필수)
 - Claude CLI 설치 (선택)
