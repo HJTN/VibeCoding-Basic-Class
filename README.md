@@ -25,12 +25,12 @@
 | :---: | :---: | :---: | :---: | :---: |
 | 1차시 | 약 60+@분 | 오리엔테이션, 개발 환경 구축, Antigravity 사용법 | [1차시 강의 자료](./docs/lecture-notes/[VibeCoding]%201차시%20강의%20자료.pdf) | - |
 | 2차시 | 약 60+@분 | Markdown 언어에 대한 이해와 실습 | [2차시 강의 자료](./docs/lecture-notes/[VibeCoding]%202차시%20강의%20자료.pdf) | 마크다운 문서 잘 쓰는 법, <br/>Markdown vs HTML |
-| 3차시 | 약 90분 | 프롬프트·컨텍스트·하네스·루프 엔지니어링의 이해 | [3차시 강의 자료](./docs/lecture-notes/[VibeCoding]%203차시%20강의%20자료.pdf) | [프롬프트 엔지니어링](./docs/references/프롬프트_엔지니어링_이해.pdf) |
-| 4차시 | 약 90분 | LLM 개요, 프롬프트 보안, LLM Agent의 이해 | [4차시 강의 자료](./docs/lecture-notes/[VibeCoding]%204차시%20강의%20자료.pdf) | [LLM 개요](./docs/references/LLM_개요.pdf) |
-| 5차시 | 약 90분 | RAG, LangChain 기초 및 실습 | [5차시 강의 자료](./docs/lecture-notes/[VibeCoding]%205차시%20강의%20자료.pdf) | [RAG·LangChain 개요](./docs/references/RAG_LangChain.pdf) |
+| 3차시 | 약 90분 | 프롬프트·컨텍스트·하네스·루프 엔지니어링의 이해 | [3차시 강의 자료](./docs/lecture-notes/[VibeCoding]%203차시%20강의%20자료.pdf) | - |
+| 4차시 | 약 90분 | LLM 개요, 프롬프트 보안, LLM Agent의 이해 | [4차시 강의 자료](./docs/lecture-notes/[VibeCoding]%204차시%20강의%20자료.pdf) | - |
+| 5차시 | 약 90분 | RAG, LangChain 기초 및 실습 | [5차시 강의 자료](./docs/lecture-notes/[VibeCoding]%205차시%20강의%20자료.pdf) | - |
 | 6차시 | 약 90분 | Skill과 MCP에 대한 이해와 실습 | [6차시 강의 자료](./docs/lecture-notes/[VibeCoding]%206차시%20강의%20자료.pdf) | - |
-| 7차시 | 약 90분 | 클라우드 플랫폼 (GCP, AWS),<br/>프론트엔드·백엔드 배포 방법 등 | 준비 중... | - |
-| 8차시 | 약 90분 | 미니 프로젝트 | 준비 중... | - |
+| 7차시 | 약 90분 | 클라우드 플랫폼 (GCP, AWS),<br/>프론트엔드·백엔드 배포 방법 등 | [7차시 강의 자료](./docs/lecture-notes/[VibeCoding]%207차시%20강의%20자료.pdf) | - |
+| 8차시 | 약 90분 | 미니 프로젝트 | [8차시 강의 자료](./docs/lecture-notes/[VibeCoding]%208차시%20강의%20자료.pdf) | - |
 
 ---
 
